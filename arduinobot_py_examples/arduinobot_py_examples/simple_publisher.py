@@ -3,8 +3,8 @@ from rclpy.node import Node
 from std_msgs.msg import String
 
 class SimplePublisher(Node):
-    def _init_(self):
-        super()._init_("simple_publisher")
+    def __init__(self):
+        super().__init__("simple_publisher")
         self.pub_ = self.create_publisher(String, "chatter", 10)
         self.counter_ = 0
         self.frequency_ = 1.0
@@ -26,5 +26,5 @@ def main():
     rclpy.shutdown()
 
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     main()
