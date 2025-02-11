@@ -22,4 +22,7 @@ colcon build
 
 source install/setup.bash
 ros2 run arduinobot_py_examples simple_publisher
+
+ros2 topic list
+ros2 topic echo /chatter
  
