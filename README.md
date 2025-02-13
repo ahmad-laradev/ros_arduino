@@ -16,12 +16,11 @@ cd arduinobot_ws
 colcon build
 
 cd src
-ros2 pkg create --build-type ament_python arduinobot_py_examples
-ros2 pkg create --build-type ament_cmake arduinobot_cpp_examples
+ros2 pkg create --build-type ament_python ros_arduino
 colcon build
 
 source install/setup.bash
-ros2 run arduinobot_py_examples simple_publisher
+ros2 run ros_arduino simple_publisher
 
 ros2 topic list
 ros2 topic echo /chatter

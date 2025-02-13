@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'arduinobot_py_examples'
+package_name = 'ros_arduino'
 
 setup(
     name=package_name,
@@ -13,8 +13,8 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='ahmed-jr',
-    maintainer_email='ahmed-jr@todo.todo',
+    maintainer='hassannawazish',
+    maintainer_email='hassannawazish@todo.todo',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
