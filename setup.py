@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'simple_publisher = ros_arduino.simple_publisher:main',
-            'simple_subscriber = ros_arduino.simple_publisher:main',
+            'simple_subscriber = ros_arduino.simple_subscriber:main',
         ],
     },
 )

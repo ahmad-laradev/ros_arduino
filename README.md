@@ -27,3 +27,4 @@ ros2 topic list
 ros2 topic echo /chatter
 ros2 topic info /chatter --verbose
 ros2 topic hz /chatter
+ros2 topic pub /chatter std_msgs/msg/String "data: 'Hassan here Ros2'"
